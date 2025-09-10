@@ -12,13 +12,22 @@ The project showcases the ability to query, join, and extract insights from stru
 **Database Name:** `manufacturing_project`  
 **Schema Used:** `dbo`
 
-### Tables
-- **DIM_CUSTOMER** – customer information  
-- **DIM_DATE** – time and date details  
-- **DIM_LOCATION** – customer locations (states, regions, countries)  
-- **DIM_MANUFACTURER** – phone manufacturers  
-- **DIM_MODEL** – cellphone models  
-- **FACT_TRANSACTIONS** – transaction records (sales, purchase dates, customer IDs, etc.)  
+## 🖼️ Database Schema (ERD)
+
+Every strong analysis begins with a well-designed schema.  
+The project follows a **Star Schema** design, where the **Fact table (transactions)** is at the center and is connected to multiple **Dimension tables**.  
+
+Think of it like a galaxy 🌌 — the **FACT_TRANSACTIONS** table is the "sun," and all the dimension tables are "planets" orbiting around it, each providing context and meaning.  
+
+### 🌟 Tables & Their Roles
+- **DIM_CUSTOMER** → Who is buying? (Customer details: ID, Name, Email, Phone)  
+- **DIM_DATE** → When was the purchase? (Year, Quarter, Month)  
+- **DIM_LOCATION** → Where was it bought? (Country, State, City, Zip)  
+- **DIM_MANUFACTURER** → Who made the phone? (Manufacturer info)  
+- **DIM_MODEL** → What exactly was bought? (Model name, Price, Manufacturer link)  
+- **FACT_TRANSACTIONS** → The beating heart ❤️ (Brings everything together: model, customer, location, date, price, quantity)  
+
+This design ensures **scalability** and allows running **complex analytical queries** with ease.
 
 ---
 
