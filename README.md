@@ -47,7 +47,7 @@ The SQL queries in this project answer several analytical questions, such as:
 - **Common Table Expressions (CTEs):** Used for simplifying complex queries.  
 - **Aggregate Functions:** `SUM`, `COUNT`, `AVG`, `MAX`, `MIN` for KPIs.  
 - **Grouping & Filtering:** Extracting insights by year, region, manufacturer.  
-- **Window Functions (if present):** Ranking and trend analysis.  
+- **Window Functions:** Ranking and trend analysis.  
 - **Subqueries:** Breaking down insights into smaller steps.  
 
 ---
